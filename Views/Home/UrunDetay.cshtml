@@ -1,0 +1,55 @@
+﻿@model WebApplication2.Models.ProductModel
+
+@{
+    ViewData["Title"] = "UrunDetay";
+}
+
+<main id="detay">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+
+            <ol>
+
+                <li><a href="index.html">Home</a></li>
+                <li>@ViewData["Title"]</li>
+            </ol>
+            <h2>@ViewData["Title"]</h2>
+
+        </div>
+    </section><!-- End Breadcrumbs -->
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-8">
+                    <div class="owl-carousel portfolio-details-carousel">
+                        <img src="~/assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                        <img src="~/assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                        <img src="~/assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 portfolio-info">
+                    <h3>Ürün Detayı</h3>
+                    <ul>
+                        <li><strong>Ürün id: </strong>@Html.DisplayFor(model => model.id)</li>
+                        <li><strong>Ürün Adı: </strong>@Html.DisplayFor(model => model.ad)</li>
+                        <li><strong>Ürün Fiyatı: </strong>@Html.DisplayFor(model => model.fiyat)</li>
+                        <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                    </ul>
+
+                    <p>
+                        Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Portfolio Details Section -->
+
+</main><!-- End #main -->
